@@ -4,10 +4,10 @@
 
 
 {{ if $menu.HasChildren }}
-  <ul class="{{menu_class}}">
+  <ul class="{{$menu_class}}">
 {{ range $menu.Children }}
       <li>
-        <a  href="{{.URL}}" class="anchor_class">{{.Name}}</a>
+        <a  href="{{.URL}}" class="{{$anchor_class}}">{{.Name}}</a>
         {{ partial "hugolib/submenu.html" . }}
       </li>
 {{ end }}
