@@ -2,8 +2,8 @@
 module:
   mounts:
     - source:           img
-      target:           assets/img
+      target:           assets/hugolib/img
     - source:           partials
-      target:           layouts/partials
+      target:           layouts/hugolib/partials
     - source:           shortcodes
-      target:           layouts/shortcodes
+      target:           layouts/hugolib/shortcodes
