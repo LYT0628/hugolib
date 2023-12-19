@@ -1,5 +1,3 @@
-{{/*  return a slice containing all pages of context, 
-      context is site, section, pages, term or taxonomy */}}
 
 {{$pages := .RegularPages}}
 {{range .Sections}}
@@ -8,4 +6,4 @@
 
 {{$pages = sort $pages "Date" "desc" }}
 {{ $paginator := .Paginate $pages }}
-{{ return $paginator.Pages }}
+{{ return $paginator }}
