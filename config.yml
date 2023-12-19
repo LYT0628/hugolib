@@ -1,0 +1,9 @@
+
+module:
+  mounts:
+    - source:           img
+      target:           assets/img
+    - source:           partials
+      target:           layouts/partials
+    - source:           shortcodes
+      target:           layouts/shortcodes
