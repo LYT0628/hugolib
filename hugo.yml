@@ -24,3 +24,14 @@ module:
         target:           layouts/shortcodes
       - source:           shortcodes/fast
         target:           layouts/shortcodes
+      #i18n
+      - source:           i18n
+        target:           i18n/hugolib
+      # archetypes
+      - source:           archetypes
+        target:           archetypes
+      # static
+      - source:           static
+        target:           static
+
+
