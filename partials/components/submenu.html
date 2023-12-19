@@ -1,8 +1,13 @@
-{{ if $.HasChildren }}
-  <ul >
-{{ range $.Children }}
+{{ $menu := $.menu }}
+{{ $menu_class := $.menu_class }}
+{{ $anchor_class := $.anchor_class }}
+
+
+{{ if $menu.HasChildren }}
+  <ul class="{{menu_class}}">
+{{ range $menu.Children }}
       <li>
-        <a  href="{{.URL}}">{{.Name}}</a>
+        <a  href="{{.URL}}" class="anchor_class">{{.Name}}</a>
         {{ partial "hugolib/submenu.html" . }}
       </li>
 {{ end }}
