@@ -1,5 +1,5 @@
 {{ $res_entry := $}}
 {{ $res_tpl := resources.GetMatch $res_entry }}
-{{ $res :=  partial "components/tpl" $res_tpl }}
+{{ $res :=  partial "hugolib/tpl.html" $res_tpl }}
 {{ return  $res}}
 

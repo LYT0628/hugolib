@@ -3,7 +3,7 @@
 {{ range $.Children }}
       <li>
         <a  href="{{.URL}}">{{.Name}}</a>
-        {{ partial "components/submenu.html" . }}
+        {{ partial "hugolib/submenu.html" . }}
       </li>
 {{ end }}
   </ul>
