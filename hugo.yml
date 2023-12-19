@@ -9,6 +9,8 @@ module:
         target:           layouts/partials/hugolib
       - source:           partials/cdn 
         target:           layouts/partials/hugolib
+      - source:           partials/html
+        target:           layouts/partials/hugolib
       - source:           partials/components
         target:           layouts/partials/hugolib
       - source:           partials/markup
